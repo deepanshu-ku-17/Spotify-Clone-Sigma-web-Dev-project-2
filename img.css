@@ -1,0 +1,45 @@
+.logoImg{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    filter: invert(1);
+
+}
+
+.homeImg{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+}
+
+.searchImg{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    margin: 10px;
+}
+
+.browserImg{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+}
+
+.downloadImg{
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+}
+
+.browserImg:hover{
+    transform: scale(1.05);
+}
+
+.searchImg:hover{
+    transform: scale(1.05);
+}
+
+.homeImg:hover{
+    transform: scale(1.05);
+}
+

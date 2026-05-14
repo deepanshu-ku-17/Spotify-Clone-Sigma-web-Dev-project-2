@@ -1,0 +1,521 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: var(--encore-body-font-stack);
+}
+:root{
+    --egg-color: #b3b3b3;
+    --encore-body-font-stack: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif);
+}
+body{
+    background-color: black;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    width: 97%;
+}
+.logoImg{
+    margin-right: 15px;
+}
+.homeCircle{
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.searchBox{
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 30%;
+    min-width: 250px;
+    max-width: 400px;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+
+.searchBox:hover{
+    background-color: #3d3d3d;
+    outline: 1px solid white;
+}
+
+#searchBar{
+    background-color: transparent;
+    border: none;
+    flex: 1;
+    outline: none;
+    color: white;
+}
+
+#searchBar::placeholder{
+    color: #b3b3b3;
+}
+
+ul{
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+    margin: 5px;
+}
+
+.navLogin{
+    color: black;
+    margin-left: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color:var(--egg-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+li:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+a:hover{
+    color: white;
+}
+
+.navLogin:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+
+#main{
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+}
+
+.left{
+    border-radius: 20px;
+    width: 25%;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 15px;
+    background-color:#111111;
+    overflow-y: auto;
+}
+
+.library{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.libraryTitle{
+    font-weight: 600;
+}
+
+.libraryCircle{
+    background-color:#2a2a2a;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight:lighter;
+}
+
+.libraryCircle:hover{
+    color: white;
+    background-color: #3a3a3a;
+}
+
+.createPlaylist{
+    margin-top: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #2a2a2a;
+}
+
+.createTilte,.podcastTitle{
+    padding: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.createLine,.podcastLine{
+    padding: 5px;
+}
+
+.createButton button,.podcastButton button{
+    margin-top: 5px ;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    font-weight: 600;
+    height: 3.5vh;
+}
+.createButton button:hover,.podcastButton button:hover{
+    transform: scale(1.05);
+    transition: .2s ease;
+}
+.podcasts{
+    margin-top: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #2a2a2a;
+}
+
+.leftFooter{
+    margin-top: 30%;
+}
+
+.ptaNa a{
+    margin-left: 4%;
+    color: var(--egg-color);
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.cookie{
+    margin-top: 4%;
+}
+
+.cookie a{
+    margin-left: 4%;
+    text-decoration: none;
+    font-size: .85rem;
+}
+
+.cookie a:hover{
+    text-decoration: underline;
+}
+
+.languageDiv{
+    border: 1px solid var(--egg-color);
+    border-radius: 20px;
+    display: flex;
+    margin-top: 10%;
+    width: 35%;
+    height: 4vh;
+    padding: 2px;
+    margin-bottom: 10%;
+}
+
+.languageDiv:hover{
+    border: 1px solid white;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    color: white;
+    cursor: pointer;
+}
+
+.languageButton{
+    display: flex;
+}
+
+.langBtn{
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+}
+
+.langBtn:hover{
+    cursor: pointer;
+}
+
+.right{
+    flex: 1;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #111111;
+}
+
+.trandingTop,.popularTop{
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+}
+.trandingHeading,.popularHeading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.trandingHeading:hover,.popularHeading:hover{
+    text-decoration: underline;
+}
+
+.trandingShow,.popularShow{
+    display: flex;
+    align-items: end;
+    color: var(--egg-color);
+    font-size: .9rem;
+}
+
+.trandingShow a, .popularShow a{
+    text-decoration: none;
+}
+
+.trandingShow a:hover, .popularShow a:Hover{
+    text-decoration: underline;
+}
+
+
+.trandingOuterBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.trandingInnerBox{
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    height: 28vh;
+    width: 10vw;
+}
+
+.trandingInnerBox:hover{
+    background-color: #2a2a2a;
+}
+
+.trandingImg{
+    height: 70%;
+    border-radius: 20px;
+}
+
+.trandingImg img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.trandingSongTitle{
+    padding: 5px;
+}
+
+.trandingSinger{
+    color: var(--egg-color);
+    padding: 5px;
+    font-size: .9rem;
+}
+.trandingSinger span{
+    display: block;
+    font-size: .9rem;
+    color: var(--egg-color);
+}
+
+.popularArtists{
+
+    margin-top:3% ;
+}
+
+.popularMainBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.popularOutterBox{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50%;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.popularOutterBox:hover{
+    background-color: #2a2a2a;
+}
+
+.popularCircle{
+    margin: 4%;
+}
+.popularCircle img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.popularName{
+    padding-top: 5%;
+    margin: 5%;
+    font-size: 1.2rem;
+}
+
+.popularTitle{
+    margin: 5%;
+    font-size: .9rem;
+}
+
+.bottom{
+    display: flex;
+    justify-content:space-between;
+    height: 47px;
+    width: 98vw;
+    margin-top: 8px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background:linear-gradient(to left, #33ccff 0%, #fd3f9e 100%);
+}
+
+.bottomLeft{
+    padding: 2px;
+    padding-left: 10px;
+    display: flexbox;
+    align-self: center;
+}
+
+.bottomLeft span{
+    display: block;
+    font-size: .9rem;
+}
+
+.span1{
+        font-weight:800;
+}
+
+.bottomRight{
+    margin: 6px;
+    margin-right: 20px;
+    height: 70%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomRight:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+.bottomBtn a{
+    padding: 5px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.trandingImg,.popularCircle{
+    position: relative;
+}
+
+.playBtn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+
+    background-color: #1db954;  /* Spotify green */
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.trandingInnerBox:hover .playBtn,
+.popularOutterBox:hover .playBtn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.playBtn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.playBox{
+    display: none;
+    justify-content: center;
+}
+.soundBox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    margin: 10px;
+    background-color: #111111;
+    border-radius: 20px;
+    gap: 5%;
+}
+
+.control{
+    display: flex;
+    gap: 50%;
+    padding: 5% ;
+}
+
+.volumn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% ;
+}
+
+.previous:hover,
+.next:hover,
+.playStop:hover,
+.muteBtn:hover,
+.volumnRoker:hover{
+    cursor: pointer;
+}
+
+.songBar{
+    width: 60%;
+    height: 5px;
+    background-color: gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.progress{
+    height: 100%;
+    width: 0%;
+    background-color: #1db954;
+    border-radius: 10px;
+}
